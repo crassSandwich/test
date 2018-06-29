@@ -1,5 +1,5 @@
 const THREE = require('three');
-const Cube = require('cube');
+const Cube = require('./cube.js');
 
 console.log(window);
 
