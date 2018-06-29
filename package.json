@@ -18,7 +18,7 @@
 		"test": "mocha",
 		"test-serve": "npm test  &&  npm run build  &&  npx http-server dist",
 		"start": "npx webpack-serve ./webpack.server.config.js --content src",
-		"deploy": "npm test  &&  npm run build  &&  butler push dist crass-sandwich/test:html",
+		"deploy": "butler push dist crass-sandwich/test:html",
 		"status": "butler status crass-sandwich/test"
 	},
 	"author": "crass_sandwich",
