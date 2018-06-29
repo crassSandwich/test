@@ -14,7 +14,7 @@
 		"webpack-serve": "^1.0.4"
 	},
 	"scripts": {
-		"build": "cp src/index.html dist/index.html  &&  npx webpack --display-error-details",
+		"build": "mkdir -p dist  &&  cp src/index.html dist/index.html  &&  npx webpack --display-error-details",
 		"test": "mocha",
 		"test-serve": "npm test  &&  npm run build  &&  npx http-server dist",
 		"start": "npx webpack-serve ./webpack.server.config.js --content src",
