@@ -23,7 +23,7 @@ function mainLoop () {
 	renderer.render(scene, camera);
 	requestAnimationFrame(mainLoop);
 
-	cube.rotation.setFromVector3(cube.rotation.toVector3().addScalar(dt * .5));
+	cube.rotation.setFromVector3(cube.rotation.toVector3().addScalar(dt * .6));
 }
 
 mainLoop();
