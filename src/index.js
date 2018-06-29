@@ -17,6 +17,7 @@ scene.add(camera);
 let clock = new THREE.Clock();
 
 let cube = Cube();
+scene.add(cube);
 
 function mainLoop () {
 	let dt = clock.getDelta();
