@@ -9,6 +9,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: npm run deploy
+  script: npm run build  &&  npm run deploy
   on:
     branch: release
