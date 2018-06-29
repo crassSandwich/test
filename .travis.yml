@@ -8,6 +8,7 @@ before_deploy:
   - export PATH=$PATH:/tmp/
 
 deploy:
+  skip_cleanup: true
   provider: script
   script: npm run build  &&  npm run deploy
   on:
